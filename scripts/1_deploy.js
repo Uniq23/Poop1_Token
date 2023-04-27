@@ -5,7 +5,7 @@ async function main() {
   // The line 3 function is to contact to artifcats and help deploy smart contracts with ether.js to the blockchain live
 
   // Deploy contract
-  const token = await Token.deploy()
+  const token = await Token.deploy('Poo Bear1', 'Poop', '1000000' )
   await token.deployed()
   console.log(`Token Deployed to: ${token.address}`)
 }
